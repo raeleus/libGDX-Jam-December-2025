@@ -16,7 +16,10 @@ public class Main extends ApplicationAdapter {
     @Override
     public void create() {
         batch = new TwoColorPolygonBatch(32767);
-        bgm = Gdx.audio.newMusic(Gdx.files.internal(""));
+        bgm = Gdx.audio.newMusic(Gdx.files.internal("bgm.ogg"));
+        bgm.setLooping(true);
+        bgm.setVolume(.6f);
+        bgm.play();
         skeletonRenderer = new SkeletonRenderer();
     }
 
