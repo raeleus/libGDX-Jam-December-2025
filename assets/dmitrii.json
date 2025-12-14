@@ -1,0 +1,274 @@
+{
+"skeleton": {
+	"hash": "pmtNXC8bZNo",
+	"spine": "4.2.43",
+	"x": -164.5,
+	"y": 4.35,
+	"width": 340.96,
+	"height": 443.87,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "dmitrii-body", "parent": "root", "length": 62.73, "rotation": -0.48, "x": 32.21, "y": 223.33 },
+	{ "name": "dmitrii-head", "parent": "dmitrii-body", "length": 78.95, "rotation": 91.24, "x": 9.24, "y": 145.94 },
+	{ "name": "dmitrii-arm", "parent": "dmitrii-body", "length": 95.12, "rotation": -131.63, "x": -21.5, "y": 133.13 },
+	{ "name": "forearm", "parent": "dmitrii-arm", "length": 102.66, "rotation": -29.18, "x": 92.21, "y": 0.89 },
+	{ "name": "dmitrii-arm2", "parent": "dmitrii-body", "length": 90.05, "rotation": -48.52, "x": 45.38, "y": 137.87 },
+	{ "name": "forearm2", "parent": "dmitrii-arm2", "length": 108.77, "rotation": -35.21, "x": 90.47, "y": 4.48 },
+	{ "name": "dmitrii-leg", "parent": "dmitrii-body", "length": 85.2, "rotation": -103.73, "x": -16.61, "y": -13.73 },
+	{ "name": "dmitrii-foreleg", "parent": "dmitrii-leg", "length": 81.11, "rotation": 11.62, "x": 87.24, "y": -1.64 },
+	{ "name": "foot", "parent": "dmitrii-foreleg", "length": 35.78, "rotation": -62.35, "x": 89.33, "y": 3.51 },
+	{ "name": "dmitrii-leg2", "parent": "dmitrii-body", "length": 90.53, "rotation": -103.56, "x": 22.6, "y": -14.45 },
+	{ "name": "dmitrii-foreleg2", "parent": "dmitrii-leg2", "length": 79.57, "rotation": 11.02, "x": 86.22 },
+	{ "name": "foot2", "parent": "dmitrii-foreleg2", "length": 33.71, "rotation": -63.21, "x": 82.32, "y": 7.47 }
+],
+"slots": [
+	{ "name": "dmitrii-template", "bone": "root", "color": "7f0000ff", "visible": false },
+	{ "name": "dmitrii-arm", "bone": "dmitrii-arm", "attachment": "dmitrii-arm" },
+	{ "name": "dmitrii-arm2", "bone": "dmitrii-arm2", "attachment": "dmitrii-arm" },
+	{ "name": "forearm", "bone": "forearm", "attachment": "dmitrii-forearm" },
+	{ "name": "foot", "bone": "foot", "attachment": "foot" },
+	{ "name": "dmitrii-foreleg", "bone": "dmitrii-foreleg", "attachment": "dmitrii-foreleg" },
+	{ "name": "dmitrii-leg", "bone": "dmitrii-leg", "attachment": "dmitrii-leg" },
+	{ "name": "foot2", "bone": "foot2", "attachment": "foot" },
+	{ "name": "dmitrii-foreleg2", "bone": "dmitrii-foreleg2", "attachment": "dmitrii-foreleg" },
+	{ "name": "dmitrii-leg2", "bone": "dmitrii-leg2", "attachment": "dmitrii-leg" },
+	{ "name": "dmitrii-body", "bone": "dmitrii-body", "attachment": "dmitrii-body" },
+	{ "name": "dmitrii-head", "bone": "dmitrii-head", "attachment": "dmitrii-head" },
+	{ "name": "forearm2", "bone": "forearm2", "attachment": "dmitrii-forearm" },
+	{ "name": "walk frame", "bone": "root", "visible": false }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"dmitrii-arm": {
+				"dmitrii-arm": { "x": 45.76, "y": -6.31, "rotation": 178.43, "width": 115, "height": 53 }
+			},
+			"dmitrii-arm2": {
+				"dmitrii-arm": {
+					"x": 39.2,
+					"y": -5.89,
+					"scaleX": -1,
+					"scaleY": -1,
+					"rotation": -3.92,
+					"width": 115,
+					"height": 53
+				}
+			},
+			"dmitrii-body": {
+				"dmitrii-body": { "x": 5.46, "y": 59.14, "rotation": 0.48, "width": 119, "height": 191 }
+			},
+			"dmitrii-foreleg": {
+				"dmitrii-foreleg": { "x": 37.39, "y": 1.95, "rotation": 94.13, "width": 41, "height": 96 }
+			},
+			"dmitrii-foreleg2": {
+				"dmitrii-foreleg": { "x": 36.95, "y": 0.41, "rotation": 94.56, "width": 41, "height": 96 }
+			},
+			"dmitrii-head": {
+				"dmitrii-head": { "x": 33.92, "y": -8.81, "rotation": -90.76, "width": 85, "height": 90 }
+			},
+			"dmitrii-leg": {
+				"dmitrii-leg": { "x": 41.82, "y": 0.72, "rotation": 90.61, "width": 42, "height": 99 }
+			},
+			"dmitrii-leg2": {
+				"dmitrii-leg": { "x": 40.74, "y": 0.62, "rotation": 90.44, "width": 42, "height": 99 }
+			},
+			"foot": {
+				"foot": { "x": 16.41, "y": 1.42, "rotation": 175.97, "width": 56, "height": 29 }
+			},
+			"foot2": {
+				"foot": { "x": 16.94, "y": 1.2, "rotation": 177.26, "width": 56, "height": 29 }
+			},
+			"forearm": {
+				"dmitrii-forearm": { "x": 51.12, "y": 7.09, "rotation": 176.47, "width": 130, "height": 48 }
+			},
+			"forearm2": {
+				"dmitrii-forearm": {
+					"x": 54.08,
+					"y": 3.32,
+					"scaleX": -1,
+					"scaleY": -1,
+					"rotation": -3.82,
+					"width": 130,
+					"height": 48
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"crank": {
+		"bones": {
+			"dmitrii-arm": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 59.07 },
+					{ "time": 0.2667, "value": 8.65 },
+					{ "time": 0.3667, "value": 1.47 },
+					{ "time": 0.5 }
+				]
+			},
+			"forearm": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": -72.1 },
+					{ "time": 0.2667, "value": -113.62 },
+					{ "time": 0.3667, "value": -53.71 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"stand": {},
+	"walk": {
+		"bones": {
+			"dmitrii-arm": {
+				"rotate": [
+					{ "value": 64.46 },
+					{ "time": 0.1333, "value": 65.14 },
+					{ "time": 0.2667, "value": 27.3 },
+					{ "time": 0.3667, "value": 27.61 },
+					{ "time": 0.5, "value": 19.05 },
+					{ "time": 0.6333, "value": 26.79 },
+					{ "time": 0.7667, "value": 22.41 },
+					{ "time": 0.8667, "value": 48.74 },
+					{ "time": 1, "value": 64.46 }
+				]
+			},
+			"forearm": {
+				"rotate": [
+					{ "value": -36.12 },
+					{ "time": 0.1333, "value": -40.86 },
+					{ "time": 0.2667, "value": 21.04 },
+					{ "time": 0.3667, "value": -48 },
+					{ "time": 0.5, "value": -65.32 },
+					{ "time": 0.6333, "value": -64.37 },
+					{ "time": 0.7667, "value": 33.69 },
+					{ "time": 0.8667, "value": -20.47 },
+					{ "time": 1, "value": -36.12 }
+				]
+			},
+			"dmitrii-arm2": {
+				"rotate": [
+					{ "value": -30.77 },
+					{ "time": 0.1333, "value": -30.01 },
+					{ "time": 0.2667, "value": -23.58 },
+					{ "time": 0.3667, "value": -5.93 },
+					{ "time": 0.5, "value": 5.86 },
+					{ "time": 0.6333, "value": 17.6 },
+					{ "time": 0.7667, "value": -41.17 },
+					{ "time": 0.8667, "value": -61.41 },
+					{ "time": 1, "value": -30.77 }
+				]
+			},
+			"forearm2": {
+				"rotate": [
+					{ "value": -97.62 },
+					{ "time": 0.1333, "value": -91.58 },
+					{ "time": 0.2667, "value": -45.35 },
+					{ "time": 0.3667, "value": -18.74 },
+					{ "time": 0.5, "value": -23.97 },
+					{ "time": 0.6333, "value": -20.68 },
+					{ "time": 0.7667, "value": 15.96 },
+					{ "time": 0.8667, "value": -27.54 },
+					{ "time": 1, "value": -97.62 }
+				]
+			},
+			"dmitrii-leg2": {
+				"rotate": [
+					{ "value": 45.16 },
+					{ "time": 0.1333, "value": -0.99 },
+					{ "time": 0.2667, "value": -34.83 },
+					{ "time": 0.3667, "value": -67.1 },
+					{ "time": 0.5, "value": -20.16 },
+					{ "time": 0.6333, "value": -8.31 },
+					{ "time": 0.7667, "value": 8.18 },
+					{ "time": 0.8667, "value": 32.88 },
+					{ "time": 1, "value": 45.16 }
+				]
+			},
+			"dmitrii-foreleg2": {
+				"rotate": [
+					{ "value": -8.02 },
+					{ "time": 0.1333, "value": 80.39 },
+					{ "time": 0.2667, "value": 99.54 },
+					{ "time": 0.3667, "value": 85.65 },
+					{ "time": 0.5, "value": -8.86 },
+					{ "time": 0.6333, "value": -1.54 },
+					{ "time": 0.7667, "value": -6.73 },
+					{ "time": 0.8667, "value": -6.84 },
+					{ "time": 1, "value": -8.02 }
+				]
+			},
+			"dmitrii-foreleg": {
+				"rotate": [
+					{ "value": -13 },
+					{ "time": 0.1333, "value": 34.65 },
+					{ "time": 0.2667, "value": 15.17 },
+					{ "time": 0.3667, "value": -8.83 },
+					{ "time": 0.5, "value": 29.99 },
+					{ "time": 0.6333, "value": 69.43 },
+					{ "time": 0.7667, "value": 91.07 },
+					{ "time": 0.8667, "value": 92.02 },
+					{ "time": 1, "value": -13 }
+				]
+			},
+			"dmitrii-leg": {
+				"rotate": [
+					{ "value": -10.76 },
+					{ "time": 0.1333, "value": -16.67 },
+					{ "time": 0.2667, "value": 13.47 },
+					{ "time": 0.3667, "value": 42.07 },
+					{ "time": 0.5, "value": 35.74 },
+					{ "time": 0.6333, "value": 23.87 },
+					{ "time": 0.7667, "value": -0.09 },
+					{ "time": 0.8667, "value": -49.04 },
+					{ "time": 1, "value": -10.76 }
+				]
+			},
+			"foot": {
+				"rotate": [
+					{ "value": -23.56 },
+					{ "time": 0.1333, "value": -38.17 },
+					{ "time": 0.2667, "value": -51.34 },
+					{ "time": 0.3667, "value": -53.67 },
+					{ "time": 0.5, "value": -64.53 },
+					{ "time": 0.6333, "value": -32.36 },
+					{ "time": 0.7667, "value": -23.64 },
+					{ "time": 0.8667, "value": -31.98 },
+					{ "time": 1, "value": -23.56 }
+				]
+			},
+			"foot2": {
+				"rotate": [
+					{ "value": -29.82 },
+					{ "time": 0.1333, "value": -18.88 },
+					{ "time": 0.2667, "value": -16.23 },
+					{ "time": 0.3667, "value": -9.54 },
+					{ "time": 0.5, "value": -18.37 },
+					{ "time": 0.6333, "value": -8.72 },
+					{ "time": 0.7667, "value": -22.76 },
+					{ "time": 0.8667, "value": -46.93 },
+					{ "time": 1, "value": -29.82 }
+				]
+			},
+			"dmitrii-body": {
+				"translate": [
+					{ "y": -43.69 },
+					{ "time": 0.1333, "y": -34.95 },
+					{ "time": 0.2667, "y": -28.59 },
+					{ "time": 0.3667, "y": -41.3 },
+					{ "time": 0.5, "y": -50.83 },
+					{ "time": 0.6333, "y": -31.77 },
+					{ "time": 0.7667, "y": -24.62 },
+					{ "time": 0.8667, "y": -40.51 },
+					{ "time": 1, "y": -43.69 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,878 @@
+{
+"skeleton": {
+	"hash": "QnOY9p9+yy8",
+	"spine": "4.2.43",
+	"x": -0.5,
+	"y": -82.72,
+	"width": 1921,
+	"height": 1162.72,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "scene3-cup", "parent": "root", "length": 100.9, "rotation": 4.09, "x": 870.12, "y": 544.99 },
+	{ "name": "scene3-drac", "parent": "root", "length": 138.38, "x": 986.93, "y": 546.79 },
+	{ "name": "scene3-shatter3", "parent": "root", "length": 55.74, "rotation": 1.85, "x": 456.76, "y": 305.97 },
+	{ "name": "scene3-shatter2", "parent": "root", "length": 57.51, "x": 447.78, "y": 343.71 },
+	{ "name": "scene3-shatter", "parent": "root", "length": 55.74, "rotation": 1.85, "x": 431.6, "y": 313.16 },
+	{ "name": "portrait-drac", "parent": "root", "length": 234.38, "x": 368.04, "y": 237.14 },
+	{ "name": "portrait-drac-hand2", "parent": "portrait-drac", "length": 423.62, "rotation": 37.78, "x": -121.38, "y": -276.24 },
+	{ "name": "portrait-drac-hand", "parent": "portrait-drac", "length": 443.83, "rotation": 38.49, "x": 37.67, "y": -280.42 },
+	{ "name": "portrait-dmitrii", "parent": "root", "length": 322.28, "rotation": 180, "x": 1611.1, "y": 228.77 },
+	{ "name": "portrait-dmitrii-hand2", "parent": "portrait-dmitrii", "length": 396.82, "rotation": -37.72, "x": -79.52, "y": 284.61 },
+	{ "name": "portrait-dmitrii-hand", "parent": "portrait-dmitrii", "length": 413.17, "rotation": -39.66, "x": 62.78, "y": 263.68 },
+	{ "name": "scene2-space", "parent": "root", "length": 271.24, "x": 951.71, "y": 510.38 }
+],
+"slots": [
+	{ "name": "scene3", "bone": "root", "attachment": "scene3" },
+	{ "name": "scene3-drac", "bone": "scene3-drac", "attachment": "scene3-drac" },
+	{ "name": "scene3-cup", "bone": "scene3-cup", "attachment": "scene3-cup" },
+	{ "name": "scene3-shatter", "bone": "scene3-shatter", "attachment": "scene3-shatter" },
+	{ "name": "scene3-shatter2", "bone": "scene3-shatter2", "attachment": "scene3-shatter" },
+	{ "name": "scene3-shatter3", "bone": "scene3-shatter3", "attachment": "scene3-shatter" },
+	{ "name": "dialog", "bone": "root", "attachment": "dialog" },
+	{ "name": "portrait", "bone": "root", "attachment": "portrait-drac" },
+	{ "name": "portrait-dmitrii-hand", "bone": "portrait-dmitrii-hand", "attachment": "portrait-dmitrii-hand" },
+	{ "name": "portrait-drac-hand", "bone": "portrait-drac-hand", "attachment": "portrait-drac-hand" },
+	{ "name": "portrait-dmitrii", "bone": "portrait-dmitrii", "attachment": "portrait-dmitrii" },
+	{ "name": "portrait-drac", "bone": "portrait-drac", "attachment": "portrait-drac" },
+	{ "name": "portrait-drac-hand2", "bone": "portrait-drac-hand2", "attachment": "portrait-drac-hand" },
+	{ "name": "portrait-dmitrii-hand2", "bone": "portrait-dmitrii-hand2", "attachment": "portrait-dmitrii-hand" },
+	{ "name": "scene2-smack", "bone": "root", "attachment": "scene2-smack" },
+	{ "name": "scene2-space", "bone": "scene2-space", "attachment": "scene2-space" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"dialog": {
+				"dialog": { "x": 974.17, "y": 807.44, "width": 1821, "height": 448 }
+			},
+			"portrait": {
+				"portrait-dmitrii": { "x": 256.91, "y": 799.81, "width": 270, "height": 357 },
+				"portrait-drac": { "x": 277.9, "y": 807.44, "width": 353, "height": 356 },
+				"portrait-skull": { "x": 277.9, "y": 807.44, "width": 256, "height": 251 }
+			},
+			"portrait-dmitrii": {
+				"portrait-dmitrii": { "x": 29.3, "y": 62.78, "rotation": 180, "width": 270, "height": 357 }
+			},
+			"portrait-dmitrii-hand": {
+				"portrait-dmitrii-hand": { "x": 193.46, "y": 2.71, "scaleX": -1, "rotation": -140.34, "width": 407, "height": 330 }
+			},
+			"portrait-dmitrii-hand2": {
+				"portrait-dmitrii-hand": { "x": 216.93, "y": -6.84, "scaleX": -1, "rotation": -142.28, "width": 407, "height": 330 }
+			},
+			"portrait-drac": {
+				"portrait-drac": { "x": 25.11, "y": -92.08, "width": 353, "height": 356 }
+			},
+			"portrait-drac-hand": {
+				"portrait-drac-hand": { "x": 205.24, "y": 2.57, "rotation": -38.49, "width": 407, "height": 331 }
+			},
+			"portrait-drac-hand2": {
+				"portrait-drac-hand": { "x": 209.24, "y": -3.31, "rotation": -37.78, "width": 407, "height": 331 }
+			},
+			"scene2-smack": {
+				"scene2-smack": { "x": 960, "y": 540, "width": 800, "height": 253 }
+			},
+			"scene2-space": {
+				"scene2-space": { "x": 8.29, "y": 29.62, "width": 671, "height": 157 }
+			},
+			"scene3": {
+				"scene3": { "x": 960, "y": 540, "width": 1921, "height": 1080 }
+			},
+			"scene3-cup": {
+				"scene3-cup": { "x": 4.48, "y": 21.21, "rotation": -4.09, "width": 51, "height": 73 }
+			},
+			"scene3-drac": {
+				"scene3-drac": { "x": -22.3, "y": 2.4, "width": 250, "height": 336 }
+			},
+			"scene3-shatter": {
+				"scene3-shatter": { "x": -1.15, "y": -1.66, "rotation": -1.85, "width": 42, "height": 58 }
+			},
+			"scene3-shatter2": {
+				"scene3-shatter": { "x": 1.8, "y": -1.72, "width": 42, "height": 58 }
+			},
+			"scene3-shatter3": {
+				"scene3-shatter": { "x": 4.32, "y": 1.54, "rotation": -1.85, "width": 42, "height": 58 }
+			}
+		}
+	}
+],
+"events": {
+	"sfx/button press": { "audio": "sfx/button press.ogg" },
+	"sfx/d01": { "audio": "sfx/d01.ogg" },
+	"sfx/d02": { "audio": "sfx/d02.ogg" },
+	"sfx/d03": { "audio": "sfx/d03.ogg" },
+	"sfx/d04": { "audio": "sfx/d04.ogg" },
+	"sfx/death": { "audio": "sfx/death.ogg" },
+	"sfx/door": { "audio": "sfx/door.ogg" },
+	"sfx/drac01": { "audio": "sfx/drac01.ogg" },
+	"sfx/drac02": { "audio": "sfx/drac02.ogg" },
+	"sfx/drac03a": { "audio": "sfx/drac03a.ogg" },
+	"sfx/drac03b": { "audio": "sfx/drac03b.ogg" },
+	"sfx/drawbridge": { "audio": "sfx/drawbridge.ogg" },
+	"sfx/Shadows of the Belfry": { "audio": "sfx/Shadows of the Belfry.ogg" },
+	"sfx/shatter": { "audio": "sfx/shatter.ogg" },
+	"sfx/skeleton": { "audio": "sfx/skeleton.ogg" },
+	"sfx/slap": { "audio": "sfx/slap.ogg" },
+	"sfx/text": {}
+},
+"animations": {
+	"fight-death": {
+		"slots": {
+			"dialog": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"portrait": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"portrait-drac": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"portrait-drac-hand": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"portrait-drac-hand2": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"scene2-smack": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"scene2-space": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"scene3": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				]
+			},
+			"scene3-cup": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-drac": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter2": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter3": {
+				"rgba": [
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"portrait-dmitrii": {
+				"translate": [
+					{ "x": -523.17 }
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"rotate": [
+					{ "value": -50.49 }
+				]
+			},
+			"portrait-drac": {
+				"rotate": [
+					{
+						"curve": [ 0.889, 0, 1.778, 94.16 ]
+					},
+					{ "time": 2.6667, "value": 94.16 }
+				],
+				"translate": [
+					{
+						"x": 343.2,
+						"curve": [ 0.267, 269.32, 0.533, 169.47, 0.277, 4.65, 0.533, 0 ]
+					},
+					{
+						"time": 0.8,
+						"x": 121.55,
+						"y": -40.15,
+						"curve": [ 1.422, 9.72, 2.044, -50.19, 1.422, -133.84, 2.044, -441.65 ]
+					},
+					{ "time": 2.6667, "x": -136.05, "y": -642.41 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "sfx/death" }
+		]
+	},
+	"fight-loop": {
+		"slots": {
+			"dialog": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-cup": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter3": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"portrait-dmitrii": {
+				"translate": [
+					{ "x": -523.17 },
+					{ "time": 0.1667, "x": -301.35 },
+					{ "time": 0.3333, "x": -523.17 }
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"rotate": [
+					{
+						"curve": [ 0.033, -15.15, 0.067, -45.46 ]
+					},
+					{
+						"time": 0.1,
+						"value": -45.46,
+						"curve": [ 0.133, -45.46, 0.167, 15.15 ]
+					},
+					{
+						"time": 0.2,
+						"curve": [ 0.233, -15.15, 0.267, -45.46 ]
+					},
+					{
+						"time": 0.3,
+						"value": -45.46,
+						"curve": [ 0.333, -45.46, 0.367, 15.15 ]
+					},
+					{
+						"time": 0.4,
+						"curve": [ 0.433, -15.15, 0.467, -45.46 ]
+					},
+					{
+						"time": 0.5,
+						"value": -45.46,
+						"curve": [ 0.533, -45.46, 0.567, -3.52 ]
+					},
+					{ "time": 0.6, "value": 17.44 }
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"rotate": [
+					{
+						"value": -50.49,
+						"curve": [ 0.033, -50.49, 0.067, 31.22 ]
+					},
+					{
+						"time": 0.1,
+						"value": 31.22,
+						"curve": [ 0.133, 31.22, 0.167, -50.49 ]
+					},
+					{
+						"time": 0.2,
+						"value": -50.49,
+						"curve": [ 0.233, -50.49, 0.267, 31.22 ]
+					},
+					{
+						"time": 0.3,
+						"value": 31.22,
+						"curve": [ 0.333, 31.22, 0.367, -50.49 ]
+					},
+					{
+						"time": 0.4,
+						"value": -50.49,
+						"curve": [ 0.433, -50.49, 0.467, 31.22 ]
+					},
+					{
+						"time": 0.5,
+						"value": 31.22,
+						"curve": [ 0.533, 31.22, 0.567, -50.49 ]
+					},
+					{ "time": 0.6, "value": -50.49 }
+				]
+			},
+			"portrait-drac": {
+				"translate": [
+					{ "x": 343.2 },
+					{ "time": 0.1667, "x": 481.32 },
+					{ "time": 0.3333, "x": 343.2 }
+				]
+			},
+			"portrait-drac-hand": {
+				"rotate": [
+					{},
+					{ "time": 0.1, "value": -33.85 },
+					{ "time": 0.2 },
+					{ "time": 0.3, "value": -33.85 },
+					{ "time": 0.4 },
+					{ "time": 0.5, "value": -33.85 },
+					{ "time": 0.6, "value": 27.8 }
+				]
+			},
+			"portrait-drac-hand2": {
+				"rotate": [
+					{
+						"curve": [ 0.033, 9.68, 0.067, 29.03 ]
+					},
+					{
+						"time": 0.1,
+						"value": 29.03,
+						"curve": [ 0.133, 29.03, 0.167, -9.68 ]
+					},
+					{
+						"time": 0.2,
+						"curve": [ 0.233, 9.68, 0.267, 29.03 ]
+					},
+					{
+						"time": 0.3,
+						"value": 29.03,
+						"curve": [ 0.333, 29.03, 0.367, -9.68 ]
+					},
+					{
+						"time": 0.4,
+						"curve": [ 0.433, 9.68, 0.467, 29.03 ]
+					},
+					{
+						"time": 0.5,
+						"value": 29.03,
+						"curve": [ 0.533, 29.03, 0.567, -13.54 ]
+					},
+					{ "time": 0.6, "value": -34.82 }
+				]
+			}
+		}
+	},
+	"fight-start": {
+		"slots": {
+			"dialog": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-cup": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter3": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"portrait-dmitrii": {
+				"translate": [
+					{
+						"curve": [ 0.105, -130.51, 0, -301.35, 0.111, 0, 0, 0 ]
+					},
+					{ "time": 0.3333, "x": -301.35 }
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.4333, "value": -45.46 },
+					{ "time": 0.5333, "value": 17.44 }
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"rotate": [
+					{ "time": 0.4333, "value": 31.22 },
+					{ "time": 0.5333, "value": -50.49 }
+				]
+			},
+			"portrait-drac": {
+				"translate": [
+					{
+						"curve": [ 0.079, 110.72, 0, 343.2, 0.111, 0, 0, 0 ]
+					},
+					{ "time": 0.3333, "x": 343.2 }
+				]
+			},
+			"portrait-drac-hand": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.4333, "value": -33.85 },
+					{ "time": 0.5333, "value": 27.8 }
+				]
+			},
+			"portrait-drac-hand2": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.4333, "value": 29.03 },
+					{ "time": 0.5333, "value": -34.82 }
+				]
+			}
+		}
+	},
+	"hold": {
+		"slots": {
+			"dialog": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-smack": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-space": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter3": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"skeleton": {
+		"slots": {
+			"portrait": {
+				"attachment": [
+					{ "name": "portrait-skull" }
+				]
+			},
+			"portrait-dmitrii": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-smack": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-space": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3": {
+				"rgba": [
+					{ "color": "000000ff" }
+				]
+			},
+			"scene3-cup": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-shatter3": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"events": [
+			{ "name": "sfx/skeleton" },
+			{ "name": "sfx/text", "string": "SKELETON BARTENDER:\\nI can't believe that M'fer spilled my drink!" }
+		]
+	},
+	"space": {
+		"slots": {
+			"scene2-smack": {
+				"attachment": [
+					{ "time": 0.3333 }
+				]
+			}
+		},
+		"bones": {
+			"scene2-space": {
+				"translate": [
+					{
+						"time": 0.1667,
+						"curve": [ 0.222, 0, 0.278, 0, 0.222, 0, 0.278, 53.02 ]
+					},
+					{
+						"time": 0.3333,
+						"y": 53.02,
+						"curve": [ 0.411, 0, 0.489, 0, 0.411, 53.02, 0.489, 0 ]
+					},
+					{ "time": 0.5667 }
+				]
+			}
+		}
+	},
+	"speech": {
+		"slots": {
+			"portrait": {
+				"attachment": [
+					{ "name": "portrait-dmitrii" },
+					{ "time": 8.3, "name": "portrait-drac" },
+					{ "time": 17.5, "name": "portrait-dmitrii" },
+					{ "time": 25.3333, "name": "portrait-drac" },
+					{ "time": 31.2333, "name": "portrait-dmitrii" },
+					{ "time": 40.2333, "name": "portrait-drac" },
+					{ "time": 51.6667, "name": "portrait-dmitrii" },
+					{ "time": 52.8667, "name": "portrait-dmitrii" }
+				]
+			},
+			"portrait-dmitrii": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand": {
+				"attachment": [
+					{}
+				]
+			},
+			"portrait-drac-hand2": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-smack": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-space": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene3-cup": {
+				"attachment": [
+					{ "time": 42.1 }
+				]
+			},
+			"scene3-shatter": {
+				"attachment": [
+					{},
+					{ "time": 42.2, "name": "scene3-shatter" }
+				]
+			},
+			"scene3-shatter2": {
+				"attachment": [
+					{},
+					{ "time": 42.1667, "name": "scene3-shatter" }
+				]
+			},
+			"scene3-shatter3": {
+				"attachment": [
+					{},
+					{ "time": 42.1, "name": "scene3-shatter" }
+				]
+			}
+		},
+		"bones": {
+			"scene3-drac": {
+				"translate": [
+					{ "time": 40.2333 },
+					{ "time": 40.7, "x": -30.55 }
+				]
+			},
+			"scene3-cup": {
+				"rotate": [
+					{ "time": 41.4 },
+					{ "time": 42.1, "value": 368.85 }
+				],
+				"translate": [
+					{
+						"time": 41.4,
+						"curve": [ 41.522, 0, 41.644, -121.63, 41.512, 127.81, 41.659, 185.4 ]
+					},
+					{
+						"time": 41.7667,
+						"x": -215.33,
+						"y": 134.81,
+						"curve": [ 41.878, -300.51, 41.989, -385.68, 41.873, 84.53, 41.989, -234.23 ]
+					},
+					{ "time": 42.1, "x": -470.86, "y": -418.75 }
+				]
+			},
+			"scene3-shatter3": {
+				"translate": [
+					{
+						"time": 42.1,
+						"x": -50.32,
+						"y": -192.3,
+						"curve": [ 42.16, -28.43, 42.173, 17.29, 42.148, -155.31, 42.173, -54.18 ]
+					},
+					{
+						"time": 42.2333,
+						"x": 50.13,
+						"y": -54.18,
+						"curve": [ 42.325, 100.35, 42.442, 184.05, 42.325, -54.18, 42.473, -252.92 ]
+					},
+					{ "time": 42.5333, "x": 251.03, "y": -368.09 }
+				]
+			},
+			"scene3-shatter2": {
+				"translate": [
+					{
+						"time": 42.1667,
+						"x": -48.52,
+						"y": -204.88,
+						"curve": [ 42.245, -62.76, 42.289, -78, 42.21, -154.3, 42.289, -58.39 ]
+					},
+					{
+						"time": 42.3667,
+						"x": -98.75,
+						"y": -58.39,
+						"curve": [ 42.458, -123.16, 42.575, -162.92, 42.458, -58.39, 42.608, -337.28 ]
+					},
+					{ "time": 42.6667, "x": -195.01, "y": -481.12 }
+				]
+			},
+			"scene3-shatter": {
+				"translate": [
+					{
+						"time": 42.2,
+						"x": -39.54,
+						"y": -197.69,
+						"curve": [ 42.292, -109.3, 42.375, -172.08, 42.255, -141.49, 42.375, -59.57 ]
+					},
+					{
+						"time": 42.4667,
+						"x": -248.81,
+						"y": -59.57,
+						"curve": [ 42.558, -325.54, 42.675, -416.21, 42.558, -59.57, 42.675, -307.89 ]
+					},
+					{ "time": 42.7667, "x": -499.93, "y": -432.07 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "sfx/d01" },
+			{ "name": "sfx/text", "string": "DMITRII:\\nHello, I am Dmitrii. Die monster. You don't belong in this world, says I, Dmitrii." },
+			{ "time": 8.3, "name": "sfx/drac01" },
+			{ "time": 8.3, "name": "sfx/text", "string": "DRACULA:\\nDmitrii, it was not by my hand that I am once again given flesh. I was called here by humans who wish to pay me tribute." },
+			{ "time": 17.5, "name": "sfx/d02" },
+			{ "time": 17.5, "name": "sfx/text", "string": "DMITRII:\\nTribute!?! I, Dmitrii, have surmised that you steal men's souls and make them your slaves!" },
+			{ "time": 25.3333, "name": "sfx/drac02" },
+			{ "time": 25.3333, "name": "sfx/text", "string": "DRACULA:\\nAhh, Dmitrii. Perhaps the same could be said of all religions…" },
+			{ "time": 31.2333, "name": "sfx/d03" },
+			{ "time": 31.2333, "name": "sfx/text", "string": "DMITRII:\\nTo me, the one known as Dmitrii, your words are as empty as your soul! Mankind ill needs a savior such as you!" },
+			{ "time": 40.2333, "name": "sfx/drac03a" },
+			{ "time": 40.2333, "name": "sfx/text", "string": "DRACULA:\\nWhat is a man? A miserable little pile of secrets. But enough talk, Dmitrii… Have at you!" },
+			{ "time": 42.1, "name": "sfx/shatter" },
+			{ "time": 43, "name": "sfx/drac03b" },
+			{ "time": 51.6667, "name": "sfx/d04" },
+			{ "time": 51.6667, "name": "sfx/text", "string": "DMITRII:\\nDmitrii!" }
+		]
+	}
+}
+}

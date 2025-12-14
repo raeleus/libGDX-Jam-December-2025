@@ -1,0 +1,200 @@
+{
+"skeleton": {
+	"hash": "7rVbszf09rk",
+	"spine": "4.2.43",
+	"x": -0.5,
+	"width": 1921,
+	"height": 1080,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "scene2-bridge", "parent": "root", "length": 831.1, "rotation": 88.5, "x": 1642.5, "y": 240.18 },
+	{ "name": "scene2-wheel_1", "parent": "root", "length": 122.58, "rotation": -90, "x": 1628.88, "y": 229.28 },
+	{ "name": "scene2-wheel", "parent": "root", "length": 144.4, "rotation": 1.08, "x": 705.46, "y": 400.89 },
+	{ "name": "space", "parent": "root", "length": 348.67, "x": 950.61, "y": 686.91 }
+],
+"slots": [
+	{ "name": "scene2", "bone": "root", "attachment": "scene2" },
+	{ "name": "scene2-bridge", "bone": "scene2-bridge", "attachment": "scene2-bridge" },
+	{ "name": "scene2-wheel_1", "bone": "scene2-wheel_1", "attachment": "scene2-wheel_1" },
+	{ "name": "scene2-smack", "bone": "root", "attachment": "scene2-smack" },
+	{ "name": "scene2-space", "bone": "space", "attachment": "scene2-space" },
+	{ "name": "scene2-wheel", "bone": "scene2-wheel", "attachment": "scene2-wheel" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"scene2": {
+				"scene2": { "x": 960, "y": 540, "width": 1921, "height": 1080 }
+			},
+			"scene2-bridge": {
+				"scene2-bridge": { "x": 396.24, "y": -11.12, "rotation": -88.5, "width": 170, "height": 884 }
+			},
+			"scene2-smack": {
+				"scene2-smack": { "x": 960, "y": 675.77, "width": 800, "height": 253 }
+			},
+			"scene2-space": {
+				"scene2-space": { "x": 9.39, "y": -11.14, "width": 671, "height": 157 }
+			},
+			"scene2-wheel": {
+				"scene2-wheel": { "x": 0.97, "y": -4.3, "rotation": -1.08, "width": 178, "height": 178 }
+			},
+			"scene2-wheel_1": {
+				"scene2-wheel_1": { "x": 0.59, "y": 2.97, "rotation": 90, "width": 186, "height": 185 }
+			}
+		}
+	}
+],
+"animations": {
+	"bridge": {
+		"bones": {
+			"scene2-wheel": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "value": 720 }
+				]
+			},
+			"scene2-wheel_1": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "value": -1480 }
+				]
+			},
+			"scene2-bridge": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "value": 93.82 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.0333, "x": -68.54, "y": -2.77 }
+				]
+			}
+		}
+	},
+	"fade-in": {
+		"slots": {
+			"scene2": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"scene2-bridge": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"scene2-smack": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"scene2-space": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"scene2-wheel": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"scene2-wheel_1": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			}
+		}
+	},
+	"fade-out": {
+		"slots": {
+			"scene2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			},
+			"scene2-bridge": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			},
+			"scene2-smack": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			},
+			"scene2-space": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			},
+			"scene2-wheel": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			},
+			"scene2-wheel_1": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "000000ff" }
+				]
+			}
+		}
+	},
+	"hold": {
+		"slots": {
+			"scene2-smack": {
+				"attachment": [
+					{}
+				]
+			},
+			"scene2-space": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"space": {
+		"slots": {
+			"scene2-smack": {
+				"attachment": [
+					{},
+					{ "time": 0.1, "name": "scene2-smack" },
+					{ "time": 0.2 }
+				]
+			}
+		},
+		"bones": {
+			"space": {
+				"translate": [
+					{
+						"y": 46.31,
+						"curve": [ 0.033, 0, 0.067, 0, 0.033, 46.31, 0.067, 0 ]
+					},
+					{ "time": 0.1, "curve": "stepped" },
+					{
+						"time": 0.2,
+						"curve": [ 0.244, 0, 0.289, 0, 0.244, 0, 0.289, 46.31 ]
+					},
+					{ "time": 0.3333, "y": 46.31 }
+				]
+			}
+		}
+	}
+}
+}

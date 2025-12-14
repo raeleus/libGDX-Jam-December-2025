@@ -1,0 +1,60 @@
+{
+"skeleton": { "hash": "/Y5kF6q4LQ0", "spine": "4.2.43", "width": 1920, "height": 1080, "images": "", "audio": "./sfx/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "scene1", "bone": "root", "attachment": "scene1" },
+	{ "name": "scene1-press", "bone": "root", "attachment": "scene1-press" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"scene1": {
+				"scene1": { "x": 960, "y": 540, "width": 1920, "height": 1080 }
+			},
+			"scene1-press": {
+				"scene1-press": { "x": 960, "y": 171.53, "width": 1173, "height": 84 }
+			}
+		}
+	}
+],
+"animations": {
+	"fade": {
+		"slots": {
+			"scene1": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 1, "color": "000000ff" }
+				]
+			},
+			"scene1-press": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"flash": {
+		"slots": {
+			"scene1-press": {
+				"attachment": [
+					{},
+					{ "time": 0.3333, "name": "scene1-press" },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"hold": {
+		"slots": {
+			"scene1-press": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	}
+}
+}
