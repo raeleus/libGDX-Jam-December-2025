@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.esotericsoftware.spine.*;
@@ -44,6 +45,26 @@ public class Utils {
         };
         clickListener.setButton(Buttons.RIGHT);
         actor.addListener(clickListener);
+    }
+
+    public static void onAnyKeyDown(Actor actor, Runnable runnable) {
+        actor.addListener(new InputListener() {
+            @Override
+            public boolean keyDown(InputEvent event, int keycode) {
+                runnable.run();
+                return true;
+            }
+        });
+    }
+
+    public static void onAnyKeyUp(Actor actor, Runnable runnable) {
+        actor.addListener(new InputListener() {
+            @Override
+            public boolean keyUp(InputEvent event, int keycode) {
+                runnable.run();
+                return true;
+            }
+        });
     }
 
     public static Body getBody(Behaviour behaviour) {
