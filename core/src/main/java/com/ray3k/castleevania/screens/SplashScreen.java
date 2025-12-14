@@ -5,14 +5,16 @@ import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.ray3k.castleevania.Main;
 
 import static com.ray3k.castleevania.Main.*;
 
-public class Screen1 extends ScreenAdapter {
+public class SplashScreen extends ScreenAdapter {
     private Stage stage;
     private Skin skin;
     private FitViewport viewport;
@@ -22,6 +24,7 @@ public class Screen1 extends ScreenAdapter {
         viewport = new FitViewport(WINDOW_WIDTH, WINDOW_HEIGHT);
         stage = new Stage(viewport, batch);
         skin = new Skin(Gdx.files.internal("skin.json"));
+        Gdx.input.setInputProcessor(stage);
 
         var root = new Table();
         root.setFillParent(true);
@@ -29,14 +32,16 @@ public class Screen1 extends ScreenAdapter {
         stage.addActor(root);
         com.ray3k.castleevania.Utils.onClick(root, () -> {
             main.setScreen(new Screen1());
+            bgm.play();
         });
 
-
+        var label = new Label("CLICK TO PLAY", skin);
+        root.add(label);
     }
 
     @Override
     public void render(float delta) {
-        ScreenUtils.clear(Color.GREEN);
+        ScreenUtils.clear(Color.BLACK);
         stage.act();
         stage.draw();
     }

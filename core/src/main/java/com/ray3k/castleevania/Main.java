@@ -3,7 +3,7 @@ package com.ray3k.castleevania;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;import com.badlogic.gdx.Gdx;import com.badlogic.gdx.audio.Music;import com.badlogic.gdx.audio.Sound;import com.badlogic.gdx.graphics.Color;import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;import com.badlogic.gdx.utils.ScreenUtils;import com.esotericsoftware.spine.SkeletonJson;import com.esotericsoftware.spine.SkeletonRenderer;import com.esotericsoftware.spine.utils.TwoColorPolygonBatch;import com.ray3k.castleevania.screens.Screen1;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;import com.badlogic.gdx.utils.ScreenUtils;import com.esotericsoftware.spine.SkeletonJson;import com.esotericsoftware.spine.SkeletonRenderer;import com.esotericsoftware.spine.utils.TwoColorPolygonBatch;import com.ray3k.castleevania.screens.Screen1;import com.ray3k.castleevania.screens.SplashScreen;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class Main extends Game {
@@ -13,35 +13,27 @@ public class Main extends Game {
     public static TextureAtlas textureAtlas;
     public static SkeletonRenderer skeletonRenderer;
     public static SkeletonJson skeletonJson;
+    public static Main main;
 
-    public Music bgm;
+    public static Music bgm;
 
     @Override
     public void create() {
+        main = this;
+
         batch = new TwoColorPolygonBatch(32767);
         textureAtlas = new TextureAtlas(Gdx.files.internal("textures.atlas"));
 
         bgm = Gdx.audio.newMusic(Gdx.files.internal("bgm.ogg"));
         bgm.setLooping(true);
         bgm.setVolume(.6f);
-        bgm.play();
 
         skeletonRenderer = new SkeletonRenderer();
         skeletonJson = new SkeletonJson(textureAtlas);
-        setScreen(new Screen1());
+        setScreen(new SplashScreen());
     }
 
     @Override
-    public void render() {
-        ScreenUtils.clear(Color.BLACK);
-
-    }
-
-    @Override
-    public void dispose() {
-        batch.dispose();
-    }
-@Override
     public void resize(int width, int height) {
         if (width * height == 0) return;
         super.resize(width, height);
