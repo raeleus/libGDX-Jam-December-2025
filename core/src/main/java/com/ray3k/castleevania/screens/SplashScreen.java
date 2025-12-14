@@ -5,25 +5,24 @@ import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import com.ray3k.castleevania.Main;
+import com.github.tommyettinger.textra.FWSkin;
+import com.github.tommyettinger.textra.TypingLabel;
 
 import static com.ray3k.castleevania.Main.*;
 
 public class SplashScreen extends ScreenAdapter {
     private Stage stage;
-    private Skin skin;
+    private FWSkin skin;
     private FitViewport viewport;
 
     @Override
     public void show() {
         viewport = new FitViewport(WINDOW_WIDTH, WINDOW_HEIGHT);
         stage = new Stage(viewport, batch);
-        skin = new Skin(Gdx.files.internal("skin.json"));
+        skin = new FWSkin(Gdx.files.internal("skin.json"));
         Gdx.input.setInputProcessor(stage);
 
         var root = new Table();
@@ -35,8 +34,8 @@ public class SplashScreen extends ScreenAdapter {
             bgm.play();
         });
 
-        var label = new Label("CLICK TO PLAY", skin);
-        root.add(label);
+        var typingLabel = new TypingLabel("{EASE}CLICK TO PLAY", skin);
+        root.add(typingLabel);
     }
 
     @Override

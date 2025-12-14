@@ -1,9 +1,13 @@
 package com.ray3k.castleevania;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Game;import com.badlogic.gdx.Gdx;import com.badlogic.gdx.audio.Music;import com.badlogic.gdx.audio.Sound;import com.badlogic.gdx.graphics.Color;import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;import com.badlogic.gdx.utils.ScreenUtils;import com.esotericsoftware.spine.SkeletonJson;import com.esotericsoftware.spine.SkeletonRenderer;import com.esotericsoftware.spine.utils.TwoColorPolygonBatch;import com.ray3k.castleevania.screens.Screen1;import com.ray3k.castleevania.screens.SplashScreen;
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.esotericsoftware.spine.SkeletonJson;
+import com.esotericsoftware.spine.SkeletonRenderer;
+import com.esotericsoftware.spine.utils.TwoColorPolygonBatch;
+import com.ray3k.castleevania.screens.SplashScreen;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class Main extends Game {
