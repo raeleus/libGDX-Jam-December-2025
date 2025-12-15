@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "QnOY9p9+yy8",
+	"hash": "Ai3mA/IMtUk",
 	"spine": "4.2.43",
 	"x": -0.5,
 	"y": -82.72,
@@ -119,6 +119,106 @@
 	"sfx/text": {}
 },
 "animations": {
+	"fade-in": {
+		"slots": {
+			"dialog": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-dmitrii": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-dmitrii-hand": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-dmitrii-hand2": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-drac": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-drac-hand": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"portrait-drac-hand2": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene2-smack": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene2-space": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3-cup": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3-drac": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3-shatter": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3-shatter2": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"scene3-shatter3": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			}
+		}
+	},
 	"fight-death": {
 		"slots": {
 			"dialog": {
@@ -179,12 +279,18 @@
 				"rgba": [
 					{ "time": 3, "color": "ffffffff" },
 					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
 				]
 			},
 			"scene2-space": {
 				"rgba": [
 					{ "time": 3, "color": "ffffffff" },
 					{ "time": 3.3333, "color": "000000ff" }
+				],
+				"attachment": [
+					{}
 				]
 			},
 			"scene3": {
@@ -640,7 +746,8 @@
 			},
 			"scene3": {
 				"rgba": [
-					{ "color": "000000ff" }
+					{ "color": "000000ff", "curve": "stepped" },
+					{ "time": 3.2333, "color": "000000ff" }
 				]
 			},
 			"scene3-cup": {
@@ -671,7 +778,7 @@
 		},
 		"events": [
 			{ "name": "sfx/skeleton" },
-			{ "name": "sfx/text", "string": "SKELETON BARTENDER:\\nI can't believe that M'fer spilled my drink!" }
+			{ "name": "sfx/text", "string": "{FASTER}SKELETON BARTENDER:\\n{NORMAL}{EMERGE}I can't believe that M'fer spilled my drink!" }
 		]
 	},
 	"space": {
@@ -857,21 +964,21 @@
 		},
 		"events": [
 			{ "name": "sfx/d01" },
-			{ "name": "sfx/text", "string": "DMITRII:\\nHello, I am Dmitrii. Die monster. You don't belong in this world, says I, Dmitrii." },
+			{ "name": "sfx/text", "string": "{FASTER}DMITRII:\\n{NORMAL}{EMERGE}Hello, I am Dmitrii. Die monster. You don't belong in this world, says I, Dmitrii." },
 			{ "time": 8.3, "name": "sfx/drac01" },
-			{ "time": 8.3, "name": "sfx/text", "string": "DRACULA:\\nDmitrii, it was not by my hand that I am once again given flesh. I was called here by humans who wish to pay me tribute." },
+			{ "time": 8.3, "name": "sfx/text", "string": "{FASTER}DRACULA:\\n{NORMAL}{EMERGE}Dmitrii, it was not by my hand that I am once again given flesh. I was called here by humans who wish to pay me tribute." },
 			{ "time": 17.5, "name": "sfx/d02" },
-			{ "time": 17.5, "name": "sfx/text", "string": "DMITRII:\\nTribute!?! I, Dmitrii, have surmised that you steal men's souls and make them your slaves!" },
+			{ "time": 17.5, "name": "sfx/text", "string": "{FASTER}DMITRII:\\n{NORMAL}{EMERGE}Tribute!?! I, Dmitrii, have surmised that you steal men's souls and make them your slaves!" },
 			{ "time": 25.3333, "name": "sfx/drac02" },
-			{ "time": 25.3333, "name": "sfx/text", "string": "DRACULA:\\nAhh, Dmitrii. Perhaps the same could be said of all religions…" },
+			{ "time": 25.3333, "name": "sfx/text", "string": "{FASTER}DRACULA:\\n{NORMAL}{EMERGE}Ahh, Dmitrii. Perhaps the same could be said of all religions…" },
 			{ "time": 31.2333, "name": "sfx/d03" },
-			{ "time": 31.2333, "name": "sfx/text", "string": "DMITRII:\\nTo me, the one known as Dmitrii, your words are as empty as your soul! Mankind ill needs a savior such as you!" },
+			{ "time": 31.2333, "name": "sfx/text", "string": "{FASTER}DMITRII:\\n{NORMAL}{EMERGE}To me, the one known as Dmitrii, your words are as empty as your soul! Mankind ill needs a savior such as you!" },
 			{ "time": 40.2333, "name": "sfx/drac03a" },
-			{ "time": 40.2333, "name": "sfx/text", "string": "DRACULA:\\nWhat is a man? A miserable little pile of secrets. But enough talk, Dmitrii… Have at you!" },
+			{ "time": 40.2333, "name": "sfx/text", "string": "{FASTER}DRACULA:\\n{NORMAL}{EMERGE}What is a man? A miserable little pile of secrets. But enough talk, Dmitrii… Have at you!" },
 			{ "time": 42.1, "name": "sfx/shatter" },
 			{ "time": 43, "name": "sfx/drac03b" },
 			{ "time": 51.6667, "name": "sfx/d04" },
-			{ "time": 51.6667, "name": "sfx/text", "string": "DMITRII:\\nDmitrii!" }
+			{ "time": 51.6667, "name": "sfx/text", "string": "{FASTER}DMITRII:\\n{NORMAL}{EMERGE}Dmitrii!" }
 		]
 	}
 }
