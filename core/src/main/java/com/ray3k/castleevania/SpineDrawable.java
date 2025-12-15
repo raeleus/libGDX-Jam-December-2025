@@ -9,6 +9,7 @@ public class SpineDrawable extends SkeletonDrawable {
     public float cropY;
     public float cropWidth;
     public float cropHeight;
+    public boolean drawWithoutScale;
 
     public SpineDrawable(SkeletonRenderer renderer, Skeleton skeleton,
                          AnimationState state) {
@@ -31,8 +32,14 @@ public class SpineDrawable extends SkeletonDrawable {
 
     @Override
     public void draw(Batch batch, float x, float y, float width, float height) {
-        getSkeleton().setScale(width / cropWidth, height / cropHeight);
         getSkeleton().setColor(batch.getColor());
-        super.draw(batch, x - cropX * getSkeleton().getScaleX(), y - cropY * getSkeleton().getScaleY(), width, height);
+
+        if (!drawWithoutScale) {
+            getSkeleton().setScale(width / cropWidth, height / cropHeight);
+            super.draw(batch, x - cropX * getSkeleton().getScaleX(), y - cropY * getSkeleton().getScaleY(), width,
+                height);
+        } else {
+            super.draw(batch, x, y, width, height);
+        }
     }
 }

@@ -2,6 +2,7 @@ package com.ray3k.castleevania;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.esotericsoftware.spine.SkeletonJson;
@@ -35,6 +36,16 @@ public class Main extends Game {
         skeletonRenderer = new SkeletonRenderer();
         skeletonJson = new SkeletonJson(textureAtlas);
         setScreen(new SplashScreen());
+    }
+
+    @Override
+    public void render() {
+        if (Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
+            Gdx.app.exit();
+            return;
+        }
+
+        super.render();
     }
 
     @Override

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "7rVbszf09rk",
+	"hash": "Sr4ODKHDiJI",
 	"spine": "4.2.43",
 	"x": -0.5,
 	"width": 1921,
@@ -54,23 +54,23 @@
 			"scene2-wheel": {
 				"rotate": [
 					{},
-					{ "time": 0.0333, "value": 720 }
+					{ "time": 1, "value": 720 }
 				]
 			},
 			"scene2-wheel_1": {
 				"rotate": [
 					{},
-					{ "time": 0.0333, "value": -1480 }
+					{ "time": 1, "value": -1480 }
 				]
 			},
 			"scene2-bridge": {
 				"rotate": [
 					{},
-					{ "time": 0.0333, "value": 93.82 }
+					{ "time": 1, "value": 93.82 }
 				],
 				"translate": [
 					{},
-					{ "time": 0.0333, "x": -68.54, "y": -2.77 }
+					{ "time": 1, "x": -68.54, "y": -2.77 }
 				]
 			}
 		}
@@ -80,37 +80,37 @@
 			"scene2": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			},
 			"scene2-bridge": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			},
 			"scene2-smack": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			},
 			"scene2-space": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			},
 			"scene2-wheel": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			},
 			"scene2-wheel_1": {
 				"rgba": [
 					{ "color": "000000ff" },
-					{ "time": 0.0333, "color": "ffffffff" }
+					{ "time": 0.6667, "color": "ffffffff" }
 				]
 			}
 		}
@@ -120,37 +120,37 @@
 			"scene2": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			},
 			"scene2-bridge": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			},
 			"scene2-smack": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			},
 			"scene2-space": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			},
 			"scene2-wheel": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			},
 			"scene2-wheel_1": {
 				"rgba": [
 					{ "color": "ffffffff" },
-					{ "time": 0.0333, "color": "000000ff" }
+					{ "time": 0.6667, "color": "000000ff" }
 				]
 			}
 		}

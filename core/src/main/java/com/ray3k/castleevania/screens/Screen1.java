@@ -11,6 +11,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.esotericsoftware.spine.AnimationState;
+import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
+import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.esotericsoftware.spine.AnimationStateData;
 import com.github.tommyettinger.textra.FWSkin;
 import dev.lyze.gdxUnBox2d.UnBox;
@@ -22,6 +25,7 @@ public class Screen1 extends ScreenAdapter {
     private Stage stage;
     private FWSkin skin;
     private FitViewport viewport;
+    private AnimationState animation;
 
     @Override
     public void show() {
@@ -44,7 +48,7 @@ public class Screen1 extends ScreenAdapter {
         root.add(spineImage);
 
         var skeleton = spineImage.getSkeleton();
-        var animation = spineImage.getAnimationState();
+        animation = spineImage.getAnimationState();
 
         animation.setAnimation(0, "flash", true);
 
@@ -65,6 +69,13 @@ public class Screen1 extends ScreenAdapter {
     }
 
     private void nextScreen() {
-        
+        Gdx.input.setInputProcessor(null);
+        animation.setAnimation(0, "fade", false);
+        animation.addListener(new AnimationStateAdapter() {
+            @Override
+            public void complete(TrackEntry entry) {
+                main.setScreen(new Screen2());
+            }
+        });
     }
 }

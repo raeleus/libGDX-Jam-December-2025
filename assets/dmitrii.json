@@ -1,9 +1,9 @@
 {
 "skeleton": {
-	"hash": "pmtNXC8bZNo",
+	"hash": "Xt7z5moJU4c",
 	"spine": "4.2.43",
 	"x": -164.5,
-	"y": 4.35,
+	"y": -24.24,
 	"width": 340.96,
 	"height": 443.87,
 	"images": "",
@@ -122,7 +122,110 @@
 			}
 		}
 	},
-	"stand": {},
+	"fade-out": {
+		"slots": {
+			"dmitrii-arm": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-arm2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-body": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-foreleg": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-foreleg2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-head": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-leg": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-leg2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"dmitrii-template": {
+				"rgba": [
+					{ "color": "7f0000ff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"foot": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"foot2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"forearm": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"forearm2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			},
+			"walk frame": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "000000ff" }
+				]
+			}
+		},
+		"bones": {
+			"dmitrii-body": {
+				"translate": [
+					{ "y": -28.6 }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"dmitrii-body": {
+				"translate": [
+					{ "y": -28.6 }
+				]
+			}
+		}
+	},
 	"walk": {
 		"bones": {
 			"dmitrii-arm": {
